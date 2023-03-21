@@ -33,3 +33,15 @@ alert(
 `string text line 1
 string text line 2`);
 }
+
+
+
+const beispiel5 = document.querySelector("#beispiel5");
+beispiel5.addEventListener("click", executeExample5);
+
+function executeExample5() {
+    const a = 5;
+    const b = 10;
+  alert(
+"Fifteen is " + (a + b) + " and not " + (2 * a + b) + ".");
+}
