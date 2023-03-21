@@ -10,51 +10,38 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header><h2>Kurzanleitung für {WEB-API-NAME}</h2></header>
+    <header><h2>Kurzanleitung für Template literals</h2></header>
     <main>
       <h3>Wozu braucht es diese WEB-API</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio
-        mauris, <kbd>sollicitudin</kbd> et tellus quis, tincidunt tincidunt
-        urna. <mark>Vivamus facilisis mi</mark> arcu, quis tempor sapien porta
-        laoreet. Nulla nec semper arcu. Proin vehicula at urna eu tristique.
-        Fusce dignissim ante libero, ut vulputate ex congue ac. Proin malesuada,
-        mauris a ultrices congue, urna est lacinia felis, quis ornare diam mi et
-        mauris. Suspendisse ornare finibus diam nec egestas. Nunc tristique ante
-        at erat varius, eu pulvinar dui sollicitudin. In at aliquam nulla, ut
-        tristique arcu. Nam non nibh condimentum, pulvinar sapien ac, gravida
-        est. Morbi dapibus tristique turpis, et auctor odio egestas at. Vivamus
-        placerat mollis magna, et fringilla ligula semper a. In eleifend
-        sagittis ante, id volutpat nisi rutrum a.
+        Im Allgemeinen erkennt man Template literals an den <b>Backtick-Zeichen (`).</b>
+        
+        Template literals werden in allen modernen Browsern unterstützt, abgesehen
+        vom Internet Explorer.
+        Des Weiteren können auch einfache Operatoren wie Vergleiche sowie
+        Funktionen verwendet werden.
+        Die gängisten Vorteile sind:
+        <ul>
+            <li><a href="#benefit">Template literals für Strings</a></li>
+            <li><a href="#benefit2">Multi-Line-Strings</a></li>
+            <li><a href="#benefit3">String-Interpolation mit eingebetteten Ausdrücken</a></li>
+            <li><a href="#benefit4">spezielle Konstrukte, sogenannte getaggte Templates</a></li>
+            <li><a href="#benefit5">HTML einfügen</a></li>
+        </ul>
       </p>
-      <h3>Codebeispiele</h3>
-      <button id="beispiel1">Ein Beispielskript ausführen</button>
+      <h3 id="benefit">Template literals für Strings</h3>
+      <p>
+        Um einfache ' ' oder doppelte " " Anführungszeichen innerhalb Zeichenfolge
+        nutzen zu können, verwendet man gewöhnlich das Escape-Zeichen \:
+        </p>
+
       <pre><code class="language-js"> 
-    const container = document.querySelector("#container");
-    const text = document.querySelector("#text");
-    
-    const totalTime = 7500;
-    const breatheTime = (totalTime / 5) * 2;
-    const holdTime = totalTime / 5;
-    
-    breathAnimation();
-    
-    function breathAnimation() {
-        text.innerHTML = "Einatmen!";
-        container.className = "container grow"; // Growanimation in css
-    
-        setTimeout(() => {
-        text.innerHTML = "Halten";
-    
-        setTimeout(() => {
-            text.innerHTML = "Ausatmen!";
-            container.className = "container shrink"; // shrinkanimation in css
-        }, holdTime); // nach dem Halten ausatmen
-        }, breatheTime); // Nach einem Atemzyklus halten
-    }
-    
-    setInterval(breathAnimation, totalTime);
+    console.log('A \'quote\' inside a string');
+    console.log("Another \"quote\" inside a string");
       </code></pre>
+      <button id="beispiel1">Beispiel ausführen</button>
+
+
       <h3>Weiterführende Links:</h3>
       <ul>
         <li>
