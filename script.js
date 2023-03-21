@@ -13,7 +13,6 @@ const beispiel2 = document.querySelector("#beispiel2");
 beispiel2.addEventListener("click", executeExample2);
 
 function executeExample2() {
-  alert(`This is a string
-  This is a string with a 'quote' in it
+  alert(`This is a string with a 'quote' in it
   This is a string with a "double quote" in it`);
 }
