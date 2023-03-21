@@ -16,3 +16,20 @@ function executeExample2() {
   alert(`This is a string with a 'quote' in it
   This is a string with a "double quote" in it`);
 }
+
+const beispiel3 = document.querySelector("#beispiel3");
+beispiel3.addEventListener("click", executeExample3);
+
+function executeExample3() {
+alert("string text line 1 \n" + "string text line 1");
+}
+
+
+const beispiel4 = document.querySelector("#beispiel4");
+beispiel4.addEventListener("click", executeExample4);
+
+function executeExample4() {
+alert(
+`string text line 1
+string text line 2`);
+}
