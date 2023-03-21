@@ -26,7 +26,8 @@
             <li><a href="#benefit2">Multi-Line-Strings</a></li>
             <li><a href="#benefit3">String-Interpolation </a></li>
             <li><a href="#benefit4">Tagged Templates</a></li>
-            <li><a href="#benefit5">Einfügen von HTML-Elementen</a></li>
+            <li><a href="#benefit5">Raw strings</a></li>
+            <li><a href="#benefit6">Einfügen von HTML-Elementen</a></li>
         </ol>
       </p>
       <h3 id="benefit">1. Template literals für Strings</h3>
@@ -140,7 +141,21 @@ function myTag(strings, value) {
 
 
 
-      <h3 id="benefit5">5. Einfügen von HTML-Elementen</h3>
+      <h3 id="benefit5">5. Raw strings</h3>
+      <p>
+        Raw strings ermöglichen die Ausgabe von Strings ohne die Verarbeitung
+        von Escape-Sequenzen:
+        </p>
+        
+      <pre><code class="language-js"> 
+    const string = String.raw `string \n within a line`;
+    console.log(string);
+        </code></pre>
+        <button id="beispiel8">Beispiel ausführen</button>
+
+
+
+      <h3 id="benefit6">5. Einfügen von HTML-Elementen</h3>
 
       <p>
           Mit Template literals können auch sämtliche HTML-Elemente auf einer
@@ -154,7 +169,7 @@ function myTag(strings, value) {
     &lt;li&gt; example &lt;/li&gt;
     &lt;/ul&gt;`);
         </code></pre>
-        <button id="beispiel8">Beispiel ausführen</button>
+        <button id="beispiel9">Beispiel ausführen</button>
 
 
 
