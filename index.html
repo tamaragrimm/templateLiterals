@@ -16,9 +16,8 @@
       <h3>Wozu braucht es diese WEB-API</h3>
       <p>
         Im Allgemeinen erkennt man Template literals an den <b>Backtick-Zeichen (`).</b>
-        
-        Template literals werden in allen modernen Browsern unterstützt, abgesehen
-        vom Internet Explorer.
+        Diese sind rechts vom ß. Template literals werden in allen modernen Browsern 
+        unterstützt, abgesehen vom Internet Explorer.
         Des Weiteren können auch einfache Operatoren wie Vergleiche sowie
         Funktionen verwendet werden.
         Die gängisten Vorteile sind:
@@ -27,7 +26,7 @@
             <li><a href="#benefit2">Multi-Line-Strings</a></li>
             <li><a href="#benefit3">String-Interpolation </a></li>
             <li><a href="#benefit4">Tagged Templates</a></li>
-            <li><a href="#benefit5">HTML einfügen</a></li>
+            <li><a href="#benefit5">Einfügen von HTML-Elementen</a></li>
         </ol>
       </p>
       <h3 id="benefit">1. Template literals für Strings</h3>
@@ -141,8 +140,25 @@ function myTag(strings, value) {
 
 
 
-      <h3 id="benefit">5. HTML einfügen</h3>
+      <h3 id="benefit">5. Einfügen von HTML-Elementen</h3>
     
+
+
+      <p>
+          Mit Template literals können auch sämtliche HTML-Elemente auf einer
+          Webseite ausgegeben werden:
+          </p>
+
+        <pre><code class="language-js">
+    console.log(`&lt;ul&gt;
+    &lt;li&gt; example &lt;/li&gt;
+    &lt;li&gt; example &lt;/li&gt;
+    &lt;li&gt; example &lt;/li&gt;
+    &lt;/ul&gt;`);
+        </code></pre>
+        <button id="beispiel8">Beispiel ausführen</button>
+
+
 
       <h3>Weiterführende Links:</h3>
       <ul>

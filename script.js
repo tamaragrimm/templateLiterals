@@ -63,3 +63,17 @@ function executeExample7() {
   alert(
     `Hello World!`);
 }
+
+
+const beispiel8 = document.querySelector("#beispiel8");
+beispiel8.addEventListener("click", executeExample8);
+
+function executeExample8() {
+  beispiel8.outerHTML = 
+  `<ul>
+  <li> example </li>
+  <li> example </li>
+  <li> example </li>
+  </ul>`;
+}
+
