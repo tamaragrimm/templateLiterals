@@ -55,3 +55,11 @@ const b = 10;
 alert(
 `Fifteen is ${a + b} and not ${2 * a + b}.`);
 }
+
+const beispiel7 = document.querySelector("#beispiel7");
+beispiel7.addEventListener("click", executeExample7);
+
+function executeExample7() {
+  alert(
+    `Hello World!`);
+}

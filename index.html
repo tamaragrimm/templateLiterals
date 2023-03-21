@@ -116,6 +116,31 @@
 
       </p>
 
+     <p>
+      Das erste Argument einer Tag-Funktion enthält ein Array von Zeichenfolgenwerten. 
+      Die restlichen Argumente beziehen sich auf die Ausdrücke. 
+      Die Tag-Funktion kann dann beliebige Operationen mit diesen Argumenten ausführen und den manipulierten String zurückgeben.
+
+     </p> 
+
+     <pre><code class="language-js"> 
+function myTag(strings, value) {
+    console.log(strings); 
+    console.log(value); 
+      
+  return strings[0] + value + strings[1]; }
+  const message = myTag`Hello ${"world"}!`;
+      
+  console.log(message); 
+      
+            </code></pre>
+            <p>In diesem Beispiel fügt die <strong>myTag-Funktion</strong> die Strings und Werte zusammen, 
+              um die vollständige Nachricht zu bilden, und gibt sie zurück.</p>
+            
+              <button id="beispiel7">Beispiel ausführen</button>
+
+
+
       <h3 id="benefit">5. HTML einfügen</h3>
     
 
