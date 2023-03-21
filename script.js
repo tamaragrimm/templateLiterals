@@ -45,3 +45,13 @@ function executeExample5() {
   alert(
 "Fifteen is " + (a + b) + " and not " + (2 * a + b) + ".");
 }
+
+const beispiel6 = document.querySelector("#beispiel6");
+beispiel6.addEventListener("click", executeExample6);
+
+function executeExample6() {
+const a = 5;
+const b = 10;
+alert(
+`Fifteen is ${a + b} and not ${2 * a + b}.`);
+}
