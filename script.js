@@ -69,7 +69,16 @@ const beispiel8 = document.querySelector("#beispiel8");
 beispiel8.addEventListener("click", executeExample8);
 
 function executeExample8() {
-  beispiel8.outerHTML = 
+const string = String.raw `string \n within a line`;
+alert(string);
+}
+
+
+const beispiel9 = document.querySelector("#beispiel9");
+beispiel9.addEventListener("click", executeExample9);
+
+function executeExample9() {
+  beispiel9.outerHTML = 
   `<ul>
   <li> example </li>
   <li> example </li>
