@@ -61,7 +61,7 @@ beispiel7.addEventListener("click", executeExample7);
 
 function executeExample7() {
   alert(
-    `Hello World!`);
+    'Tom');
 }
 
 

@@ -123,14 +123,14 @@
      </p> 
 
      <pre><code class="language-js"> 
-function myTag(strings, value) {
-    console.log(strings); 
-    console.log(value); 
-      
-  return strings[0] + value + strings[1]; }
-  const message = myTag`Hello ${"world"}!`;
-      
-  console.log(message); 
+const tagged = (strings, ...expres) =>{
+  return expres;
+}
+
+const name = 'Tom' ;
+const test = tagged `Hallo, wie geht es dir ${name}?`;
+ 
+console.log(test) ; 
       
             </code></pre>
             <p>In diesem Beispiel fügt die <strong>myTag-Funktion</strong> die Strings und Werte zusammen, 
