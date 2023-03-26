@@ -2,8 +2,8 @@ const beispiel1 = document.querySelector("#beispiel1");
 beispiel1.addEventListener("click", executeExample);
 
 function executeExample() {
-  const str1 = 'A \'quote\' inside a string.';
-  const str2 = "Another \"quote\" inside a string.";
+  const str1 = 'This is a string with a \'quote\' in it';
+  const str2 = "This is a string with a \"double quote\" in it";
   alert(`${str1}
   ${str2}`);
 }
